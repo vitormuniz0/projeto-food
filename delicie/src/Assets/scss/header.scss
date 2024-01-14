@@ -32,6 +32,8 @@
     height: 40vh;
     margin: 0;
     padding: 0;
+    animation: animacao 3s;
+    animation-fill-mode: forwards;
 }
 
 .btn{
@@ -66,5 +68,13 @@
     color: white;
 }
 
+.Link{
+    text-decoration: none;
+    color: white;
+}
 
+@keyframes animacao {
+    from {left: -100;}
+    to {left: 500px}
+}
 

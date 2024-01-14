@@ -9,6 +9,7 @@ import Stack from "react-bootstrap/Stack";
 import { BsInstagram } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsTelephoneFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -22,14 +23,14 @@ const Header = () => {
                         </Col>
                         <Col lg={4} xs= {{order: "last"}} id="col2">
                             <Stack gap={3} className="contBtn">
-                                <Button  className="btn" variant= "dark" size="lg" onClick={() => window.location.href = '../Pages/home.tsx'}>Delivery Deliciê</Button>
-                                <Button className="btn" variant= "dark" size="lg" >Localização Deliciê</Button> {''}
-                                <Button className="btns" variant= "dark" size="lg" >Quem Somos</Button> {''}
+                                <Button  className="btn" variant= "dark" size="lg"> <Link to="/home" className="Link">Delivery Deliciê</Link></Button>
+                            <Button className="btn" variant= "dark" size="lg" ><Link to="" className="Link">Localização Deliciê</Link></Button> {''}
+                                <Button className="btns" variant= "dark" size="lg" > <Link to="/sobreNos" className="Link">Quem Somos</Link></Button> {''}
                             </Stack>
                             <div className="icons">
-                                <BsInstagram className="insta"/>
-                                <BsWhatsapp className="whats"/>
-                                <BsTelephoneFill className="tel"/>
+                                <a href="https://www.instagram.com/delicie.lanchonete/" target="_blank"><BsInstagram className="insta"/></a>
+                                <a href=""><BsWhatsapp className="whats"/></a>
+                                <a href=""><BsTelephoneFill className="tel"/></a>
                             </div>
                             <div className="localizacao">
                                 <strong><p>Vila Boca da Mata | Panelas-PE</p></strong>
@@ -37,7 +38,6 @@ const Header = () => {
                         </Col>
                     </Row>
                 </div>
-
             </Container>
         </>
     )
