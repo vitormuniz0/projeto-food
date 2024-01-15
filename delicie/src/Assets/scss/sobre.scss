@@ -1,16 +1,15 @@
-
 body, html {
     margin: 0;
    font-family: sans-serif;
-   height: 100vh ;
+   height: 100%;
 }
 
-.container{
+.cont{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    max-width: 1500vh;
+    position: absolute;
     border: 3px solid blue ;
 
 }

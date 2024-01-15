@@ -4,11 +4,10 @@
    font-family: sans-serif;
 }
 
-.conteiner{
+.fundo{
     background-image: url("../img/fundoApp.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     position: absolute;
 }
@@ -73,8 +72,5 @@
     color: white;
 }
 
-@keyframes animacao {
-    from {left: -100;}
-    to {left: 500px}
-}
+
 

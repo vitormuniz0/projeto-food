@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <>
-            <Container fluid className="conteiner" >
+            <Container fluid className="fundo" >
                 <div className="card">
                     <Row>
                         <Col lg={6} xs= {{order: "first"}} id="container1">

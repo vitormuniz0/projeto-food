@@ -1,18 +1,16 @@
+import Container from "react-bootstrap/esm/Container";
+import  "../../Assets/scss/home.scss"
 import React from "react";
-import "../../Assets/scss/home.scss"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
-import Container from "react-bootstrap/Container";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const Face = () => {
+   return (
+    <>
+    <Container fluid className="container"></Container>
 
-const Home = () =>{
-    return (
-        <>
-            <Container fluid className="container">
-            
-            </Container>
-        </>
-    )
+       
+    </>
+   )
 }
 
-export default Home;
+export default Face;

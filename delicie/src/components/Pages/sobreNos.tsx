@@ -1,8 +1,15 @@
 import React from "react";
+import  "../../Assets/scss/sobre.scss"
+import Container from "react-bootstrap/esm/Container";
 
 const SobreNos = () =>{
     return (
-        <h1>Sobre Nós</h1>
+        <>
+            <div>
+                <Container fluid className="cont"></Container>
+            </div>
+            
+        </>
     )
 }
 
